@@ -1,16 +1,13 @@
 #! /usr/bin/env node
 
-import { scanner } from "@helptheweb/scanner";
 import express from 'express';
-
-const getReport = async (url) => {
-  let n = await scanner(url);
-
-  return n;
-}
+import morgan from 'morgan';
+import { getReport } from "./src/getReport.js";
 
 const app = express()
 const port = 1234;
+
+app.use(morgan('tiny'));
 
 app.use((req, res, next) => {
   res.header("Access-Control-Allow-Origin", "*");
@@ -20,7 +17,7 @@ app.use((req, res, next) => {
 });
 
 app.get('/', (req, res) => {
-  res.send('Hello World!')
+  res.send('Help The Web!')
 })
 
 app.get('/api/v1/report', async (req, res) => {
