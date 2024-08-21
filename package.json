@@ -3,16 +3,27 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "type": "module",
+  "module": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "dev": "bun run --watch src/index.js",
+    "build": "bun build src/index.js",
+    "start": "NODE_ENV=production bun src/index.js",
+    "test": "bun test"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@helptheweb/scanner": "^1.5.0",
-    "express": "^4.19.2",
-    "morgan": "^1.10.0"
+    "@elysiajs/cors": "^1.0.2",
+    "@elysiajs/static": "^1.0.2",
+    "@elysiajs/swagger": "^1.0.3",
+    "axios": "^1.6.8",
+    "cheerio": "^1.0.0-rc.12",
+    "console": "^0.7.2",
+    "elysia": "latest",
+    "logestic": "^1.1.1"
+  },
+  "devDependencies": {
+    "bun-types": "latest"
   }
 }
