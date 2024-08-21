@@ -7,22 +7,14 @@ Server that powers the HelpTheWeb app
 Before running the tool, make sure you have the following dependencies installed:
 
 - Node.js (version 20 or above)
-- npm (Node Package Manager)
+- [Bun](https://bun.sh/docs/installation)
 
 ## Installation
 
-1. Clone the repository or download the source code.
-2. Open a terminal and navigate to the project directory.
-3. Run the following command to install the required dependencies:
-
-```bash
-npm install
-```
+1. Clone this project `git clone git@github.com:HelpTheWeb/api.git`
+2. Install dependencies: `bun install`
 
 ## Usage
 
-```bash
-npm run start
-```
-
-Navigate to localhost:1234
+1. Run: `bun dev`
+2. Hit [localhost:3000/ping](http://localhost:3000/ping)
