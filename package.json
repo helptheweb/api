@@ -13,15 +13,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@elysiajs/cors": "^1.1.0",
+    "@elysiajs/static": "^1.1.0",
+    "@elysiajs/swagger": "^1.1.1",
     "@helptheweb/scanner": "^1.5.0",
-    "@elysiajs/cors": "^1.0.2",
-    "@elysiajs/static": "^1.0.2",
-    "@elysiajs/swagger": "^1.0.3",
-    "axios": "^1.6.8",
-    "cheerio": "^1.0.0-rc.12",
-    "console": "^0.7.2",
-    "elysia": "latest",
-    "logestic": "^1.1.1"
+    "elysia": "1.1.7",
+    "logestic": "^1.2.3"
   },
   "devDependencies": {
     "bun-types": "latest"

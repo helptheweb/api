@@ -1,10 +1,8 @@
 import { scanner } from "@helptheweb/scanner";
 
 export const getReport = async (url) => {
-  if(new URL(url)){
-    let report = await scanner(url);
-    return report;
-  }
+  let report = await scanner(url);
+  return report;
 }
 
 export const getReportDetail = {

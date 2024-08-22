@@ -23,6 +23,17 @@ app.group('/v1', app => app
   // general routes
   .get('/report', ({query})=> getReport(query.url), {
     ...getReportDetail,
+    beforeHandle({set, query}) 
+      {
+        if(!query || !query.url) {
+          set.status = 400
+          return 'Missing query parameter, we need /report?url=foo'
+        }
+        if(!URL.canParse(query.url)) {
+          set.status = 400
+          return 'URL is not valid'
+        }
+      }
   })
 )
 
