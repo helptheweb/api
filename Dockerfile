@@ -32,6 +32,7 @@ COPY --from=install /temp/prod/node_modules node_modules
 COPY --from=prerelease /usr/src/app/ .
 
 # run the app
+RUN chown -R bun:bun .
 USER bun
 EXPOSE 3000/tcp
 CMD ["bun", "run", "start"]
