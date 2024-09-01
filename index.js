@@ -3,9 +3,9 @@ import { swagger } from '@elysiajs/swagger';
 import { cors } from '@elysiajs/cors';
 import { Logestic } from 'logestic';
 import staticPlugin from '@elysiajs/static';
-import { config } from './config';
-import { getHealth, getHealthDetail, getStatus, getStatusDetail } from './routes/health';
-import { getReport, getReportDetail } from './routes/report';
+import { config } from './src/config';
+import { getHealth, getHealthDetail, getStatus, getStatusDetail } from './src/routes/health';
+import { getReport, getReportDetail } from './src/routes/report';
 
 const app = new Elysia();
 const PORT = config.port;

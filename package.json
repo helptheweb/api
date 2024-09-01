@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "module": "src/index.js",
+  "module": "index.js",
   "scripts": {
-    "dev": "bun run --watch src/index.js",
-    "build": "bun build src/index.js",
-    "start": "NODE_ENV=production bun src/index.js",
+    "dev": "bun run --watch index.js",
+    "build": "bun build index.js",
+    "start": "NODE_ENV=production bun index.js",
     "test": "bun test"
   },
   "author": "",
