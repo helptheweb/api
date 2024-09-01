@@ -18,7 +18,8 @@
     "@elysiajs/swagger": "^1.1.1",
     "@helptheweb/scanner": "^2.3.0",
     "elysia": "1.1.7",
-    "logestic": "^1.2.3"
+    "logestic": "^1.2.3",
+    "puppeteer": "^23.2.1"
   },
   "devDependencies": {
     "bun-types": "latest"
