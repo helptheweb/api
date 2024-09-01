@@ -17,7 +17,7 @@ app.use(Logestic.preset('fancy'));
 // status routes
 app.get('/status', getStatus, {...getStatusDetail});
 app.get('/health', getHealth, {...getHealthDetail});
-// app.get('/favicon.ico', () => Bun.file('public/favicon.ico'));
+app.get('/favicon.ico', () => Bun.file('public/favicon.ico'));
 
 app.group('/v1', app => app
   // general routes
