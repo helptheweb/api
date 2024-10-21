@@ -1,4 +1,4 @@
-import { scanner } from "../../scanner";
+import { scanner } from "@helptheweb/scanner";
 
 export const getReport = async (url) => {
 

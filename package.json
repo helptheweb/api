@@ -13,20 +13,14 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@axe-core/puppeteer": "^4.10.0",
     "@elysiajs/cors": "^1.1.0",
     "@elysiajs/static": "^1.1.0",
     "@elysiajs/swagger": "^1.1.1",
-    "@helptheweb/scanner": "^2.3.1",
-    "axe-core": "^4.10.1",
-    "axios": "^1.7.7",
+    "@helptheweb/scanner": "^2.4.0",
     "elysia": "1.1.7",
-    "logestic": "^1.2.3",
-    "puppeteer": "^23.2.1",
-    "xml2js": "^0.6.2"
+    "logestic": "^1.2.3"
   },
   "devDependencies": {
-    "bun-types": "latest",
-    "@types/xml2js": "^0.4.14"
+    "bun-types": "latest"
   }
 }
