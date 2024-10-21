@@ -1,7 +1,14 @@
-import { scanner } from "@helptheweb/scanner";
+import { scanner } from "../../scanner";
 
 export const getReport = async (url) => {
-  let report = await scanner(url);
+
+  let launchOptions = {
+    headless: true,
+    executablePath: '/usr/bin/chromium',
+    args: ['--no-sandbox', '--disable-setuid-sandbox'],
+  }
+
+  let report = await scanner(url, launchOptions);
   return report;
 }
 
