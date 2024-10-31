@@ -16,7 +16,7 @@
     "@elysiajs/cors": "^1.1.0",
     "@elysiajs/static": "^1.1.0",
     "@elysiajs/swagger": "^1.1.1",
-    "@helptheweb/scanner": "^2.4.0",
+    "@helptheweb/scanner": "^2.5.0",
     "elysia": "1.1.7",
     "logestic": "^1.2.3"
   },
